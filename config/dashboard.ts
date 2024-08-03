@@ -14,6 +14,11 @@ export const dashboardConfig: DashboardConfig = {
   ],
   sidebarNav: [
     {
+      title: "Calls",
+      href: "/dashboard/calling",
+      icon: "phone",
+    },
+    {
       title: "Posts",
       href: "/dashboard",
       icon: "post",
