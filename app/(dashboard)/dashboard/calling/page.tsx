@@ -5,9 +5,9 @@ import { db } from "@/lib/db"
 import { getCurrentUser } from "@/lib/session"
 import { EmptyPlaceholder } from "@/components/empty-placeholder"
 import { DashboardHeader } from "@/components/header"
-import { PostCreateButton } from "@/components/post-create-button"
 import { PostItem } from "@/components/post-item"
 import { DashboardShell } from "@/components/shell"
+import { CallCreateButton } from "@/components/call-create-button"
 
 export const metadata = {
   title: "Dashboard",
@@ -38,19 +38,10 @@ export default async function DashboardPage() {
   return (
     <DashboardShell>
       <DashboardHeader heading="Calls" text="Create and manage calls.">
-        <PostCreateButton />
+        <CallCreateButton />
       </DashboardHeader>
       <div>
-    
-          <EmptyPlaceholder>
-            <EmptyPlaceholder.Icon name="post" />
-            <EmptyPlaceholder.Title>No calls created</EmptyPlaceholder.Title>
-            <EmptyPlaceholder.Description>
-              You don&apos;t have any calls yet.
-            </EmptyPlaceholder.Description>
-            <PostCreateButton variant="outline" />
-          </EmptyPlaceholder>
-        
+
       </div>
     </DashboardShell>
   )
