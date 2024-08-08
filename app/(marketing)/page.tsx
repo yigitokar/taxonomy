@@ -11,7 +11,7 @@ import BlurIn from "@/components/ui/blur-in";
 async function getGitHubStars(): Promise<string | null> {
   try {
     const response = await fetch(
-      "https://api.github.com/repos/shadcn/talos ",
+      "https://api.github.com/repos/shadcn/Care ",
       {
         headers: {
           Accept: "application/vnd.github+json",
@@ -43,7 +43,7 @@ export default async function IndexPage() {
       <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
           <BlurIn
-            word="Welcome to talos ai"
+            word="Welcome to Care ai"
             className="text-xl md:text-7xl md:leading-[5rem]"
             containerClassName="max-w-[42rem] leading-normal sm:text-xl sm:leading-8"
           />
@@ -165,7 +165,7 @@ export default async function IndexPage() {
         </div>
         <div className="mx-auto text-center md:max-w-[58rem]">
           <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-            talos  also includes a blog that you can chat with, making it even easier to integrate to your existing workflow
+            Care  also includes a blog that you can chat with, making it even easier to integrate to your existing workflow
           </p>
         </div>
       </section>
@@ -175,7 +175,7 @@ export default async function IndexPage() {
             Proudly Open Source
           </h2>
           <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-            talos  is open source and powered by open source software. <br />{" "}
+            Care  is open source and powered by open source software. <br />{" "}
             The code is available on{" "}
             <Link
               href={siteConfig.links.github}
